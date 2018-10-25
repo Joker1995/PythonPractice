@@ -51,3 +51,20 @@ print '3 判断2是否在列表里'
 b = [1,2,3,4,5]
 print 'code :b.__contains__(2)'
 print b.__contains__(2)
+
+print '''
+b = [23,45,22,44,25,66,78]
+用列表解析完成下面习题：
+1 生成所有奇数组成的列表
+'''
+b = [23,45,22,44,25,66,78]
+print 'code :a=[x for x in b if x%2==1]'
+a=[x for x in b if x%2==1]
+print a
+print '2 输出结果: ["the content 23","the content 45"]'
+print 'code :"the content %d ,the content %d" % (b[0],b[1]) '
+print "the content %d ,the content %d" % (b[0],b[1])
+print '3 输出结果: [25, 47, 24, 46, 27, 68, 80]'
+print 'code :a=[(x+2) for x in b ]'
+a=[ (x+2) for x in b ]
+print a
