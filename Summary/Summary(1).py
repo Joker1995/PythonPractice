@@ -68,3 +68,22 @@ print '3 输出结果: [25, 47, 24, 46, 27, 68, 80]'
 print 'code :a=[(x+2) for x in b ]'
 a=[ (x+2) for x in b ]
 print a
+
+print '用range方法和列表推导的方法生成列表：[11,22,33]'
+print 'code 1):b=range(11,40,11)'
+b=range(11,40,11)
+print b
+print 'code 2):b=[x for x in range(1,40) if x%11==0]'
+b=[x for x in range(1,40) if x%11==0]
+print b
+
+print '''已知元组:a = (1,4,5,6,7)
+1 判断元素4是否在元组里
+'''
+a=(1,4,5,6,7)
+print 'code :a.__contains__(4)'
+print a.__contains__(4)
+print '2 把元素5修改成8'
+print 'code :b=list(a);b[2]=8;a=tuple(b)'
+b=list(a);b[2]=8;a=tuple(b);
+print a
